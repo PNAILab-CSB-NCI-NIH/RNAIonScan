@@ -58,7 +58,7 @@ This package would require one to have the volumes and associated coordinates fi
 │   │   └── Vn.mrc
 ```
 
-Once this is done, one can run the functions to align and compute the QScore. For running the RNAIonScan, one would also need to use [cmm-web-submitter](https://github.com/PNAILab-CSB-NCI-NIH/cmm-web-submitter) to extract the ion information.
+Once this is done, one can run the functions to align and compute the QScore. For running the RNAIonScan, one would also need to use [cmm-web-submitter](https://github.com/PNAILab-CSB-NCI-NIH/cmm-web-submitter) to extract the ion information. Note: The large mrc files are not included in the repository but are available at [Zenodo](https://zenodo.org/records/17832303).
 
 ## Usage
 

@@ -1,7 +1,9 @@
 import os
 import sys
 import glob
-sys.path.append("../src")
+
+SRC_DIR = os.path.dirname(__file__) + "/../src"
+sys.path.append(SRC_DIR)
 
 from pathlib import Path
 from align import align_pdbs

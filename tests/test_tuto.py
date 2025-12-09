@@ -16,7 +16,7 @@ PATH = "../"
 def test_align():
     # Path settings
     pdb_pattern = f"{DATA_DIR}/V*/V*.cif"   # Pattern to obtain PDB files
-    output_dir  = f"{DATA_DIR}/out_aligned" # Output path for aligned PDBs
+    output_dir  = f"{DATA_DIR}/aligned"     # Output path for aligned PDBs
     reference   = f"{DATA_DIR}/V1/V1.cif"   # Alignment against this reference
 
     # Alignment settings
@@ -50,12 +50,12 @@ def test_QScore():
     )
 
     # Now, copy QScores to the prealigned folder
-    target = f"{DATA_DIR}/out_aligned" # Output path for aligned PDBs
+    target = f"{DATA_DIR}/aligned" # Output path for aligned PDBs
     for q in qpaths: os.system(f"cp {q} {target}")
 
 def test_main():
     # Parameters
-    path = f"{DATA_DIR}/out_aligned"
+    path = f"{DATA_DIR}/aligned"
     CMM_results  = f"{DATA_DIR}/V*"
     ion_chain = "B"
     min_cluster_size = 2

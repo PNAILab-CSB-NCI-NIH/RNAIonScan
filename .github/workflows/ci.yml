@@ -25,6 +25,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements
+        python -m ipykernel install --user --name ion_scan --display-name "RNAIonScan"
 
     - name: Run tests
       run: pytest tests/test_tuto.py

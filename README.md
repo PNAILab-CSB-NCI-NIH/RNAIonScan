@@ -21,17 +21,11 @@ conda create -n ion_scan python=3.11
 ### 3. Install requirements with pip
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements
 python -m ipykernel install --user --name ion_scan --display-name "RNAIonScan"
 ```
 
-### 4. Install Playwright browser drivers
-
-```bash
-playwright install
-```
-
-### 5. Activate Environment
+### 4. Activate Environment
 ```bash
 conda activate ion_scan
 ```
@@ -42,7 +36,7 @@ MIT License. See `LICENSE` file for details.
 
 ## Citing
 
-If CMM-Web-Submitter helped your research, please cite:
+If RNAIonScan helped your research, please cite:
 
 Zenodo:
 ```bibtex

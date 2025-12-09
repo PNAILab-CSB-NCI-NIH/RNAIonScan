@@ -3,6 +3,7 @@ import sys
 import glob
 
 SRC_DIR = os.path.dirname(__file__) + "/../src"
+DATA_DIR = os.path.dirname(__file__) + "/../data"
 sys.path.append(SRC_DIR)
 
 from pathlib import Path
@@ -14,9 +15,9 @@ PATH = "../"
 
 def test_align():
     # Path settings
-    pdb_pattern = f"{PATH}/data/V*/V*.cif"   # Pattern to obtain PDB files
-    output_dir  = f"{PATH}/data/out_aligned" # Output path for aligned PDBs
-    reference   = f"{PATH}/data/V1/V1.cif"   # Alignment against this reference
+    pdb_pattern = f"{DATA_DIR}/V*/V*.cif"   # Pattern to obtain PDB files
+    output_dir  = f"{DATA_DIR}/out_aligned" # Output path for aligned PDBs
+    reference   = f"{DATA_DIR}/V1/V1.cif"   # Alignment against this reference
 
     # Alignment settings
     # - Align PDBs through these core residues:
@@ -34,7 +35,7 @@ def test_align():
 
 def test_QScore():
     # Path settings
-    root_dir     = Path(f"{PATH}/data")
+    root_dir     = Path(f"{DATA_DIR}")
     chimera_path = '/Applications/ChimeraX_Daily.app/Contents/MacOS/ChimeraX'
     pdb_ext      = '.cif'
     volume_exts  = ['.mrc']
@@ -49,13 +50,13 @@ def test_QScore():
     )
 
     # Now, copy QScores to the prealigned folder
-    target = f"{PATH}/data/out_aligned" # Output path for aligned PDBs
+    target = f"{DATA_DIR}/out_aligned" # Output path for aligned PDBs
     for q in qpaths: os.system(f"cp {q} {target}")
 
 def test_main():
     # Parameters
-    path = f"{PATH}/data/out_aligned"
-    CMM_results  = f"{PATH}/data/V*"
+    path = f"{DATA_DIR}/out_aligned"
+    CMM_results  = f"{DATA_DIR}/V*"
     ion_chain = "B"
     min_cluster_size = 2
 

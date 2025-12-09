@@ -58,12 +58,12 @@ This package would require one to have the volumes and associated coordinates fi
 │   │   └── Vn.mrc
 ```
 
-Once this is done, one can run the functions to align and compute the QScore. For running the RNAIonScan, one would also need to use cmm-web-submitter to extract the ion information.
+Once this is done, one can run the functions to align and compute the QScore. For running the RNAIonScan, one would also need to use [cmm-web-submitter](https://github.com/PNAILab-CSB-NCI-NIH/cmm-web-submitter) to extract the ion information.
 
 ## Usage
 
 Once one have prepared the dataset as structured earlier, the following steps are requirements:
-- a) Run cmm-web-submitter over this dataset to extract information from CheckMyMetal website
+- a) Run [cmm-web-submitter](https://github.com/PNAILab-CSB-NCI-NIH/cmm-web-submitter) over this dataset to extract information from [CheckMyMetal](https://cmm.minorlab.org) website from all PDBs and corresponding density maps
 - b) Align PDB files (see 1-pre_align.ipynb)
 - c) Extract QScore (see 2-pre_qscore.ipynb)
 - d) Run the pipeline (see 3-RNAIonScan.ipynb)

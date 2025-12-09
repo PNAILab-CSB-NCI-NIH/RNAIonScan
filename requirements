@@ -1,0 +1,11 @@
+pytest
+numpy
+pandas
+matplotlib
+seaborn
+tqdm
+ipykernel
+jupyter
+mdtraj
+MDAnalysis
+scikit-learn

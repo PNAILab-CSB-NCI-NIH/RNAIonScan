@@ -24,13 +24,11 @@ cd RNAIonScan
 ```
 
 ### 2. Create a Conda environment
-
 ```bash
 conda create -n ion_scan python=3.11
 ```
 
 ### 3. Install requirements with pip
-
 ```bash
 pip install -r requirements
 python -m ipykernel install --user --name ion_scan --display-name "RNAIonScan"

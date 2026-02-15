@@ -66,6 +66,14 @@ Once one have prepared the dataset as structured earlier, the following steps ar
 - c) Extract QScore (see 2-pre_qscore.ipynb)
 - d) Run the pipeline (see 3-RNAIonScan.ipynb)
 
+## Important: Scope of Automated Ion Classification
+
+With respect to ion classification, RNAIonScan performs the automated components of the analysis, including ion detection, tracking across the ensemble, clustering of ion positions, and quantification of ion–residue motion relationships. Classification of rigid ions is fully automated based on coincident low positional variance of both ions and their coordinating residues.
+
+The remaining categories (transient, companion, and hopping) are not assigned solely through numerical thresholds. Instead, RNAIonScan provides the quantitative metrics, occupancy statistics, cluster assignments, and ion–residue motion descriptors required for classification, which must be interpreted in the context of structural behavior. Final categorization of these flexible ion types requires downstream analysis, including visual inspection of ensemble structures (e.g., in Chimera or equivalent molecular visualization software) to assess whether ion motion is coupled to local structural rearrangements, reflects exchange between sites, or represents non-correlated diffusion.
+
+Thus, RNAIonScan automates data extraction and quantitative characterization, while classification of non-rigid ion types integrates these metrics with expert-guided structural evaluation, following the criteria described in the manuscript.
+
 ## Citing
 
 If RNAIonScan helped your research, please cite:

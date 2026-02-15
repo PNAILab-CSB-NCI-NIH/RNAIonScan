@@ -66,7 +66,7 @@ Once one have prepared the dataset as structured earlier, the following steps ar
 - c) Extract QScore (see 2-pre_qscore.ipynb)
 - d) Run the pipeline (see 3-RNAIonScan.ipynb)
 
-## Important: Scope of Automated Ion Classification
+## Important Note: Scope of Automated Ion Classification
 
 With respect to ion classification, RNAIonScan performs the automated components of the analysis, including ion detection, tracking across the ensemble, clustering of ion positions, and quantification of ion–residue motion relationships. Classification of rigid ions is fully automated based on coincident low positional variance of both ions and their coordinating residues.
 
